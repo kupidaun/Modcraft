@@ -1,0 +1,25 @@
+ //////////////////////////////////////////////////////////////////////////////////////////////
+// Name: PamHarvestCraft.zs
+// Author: Fagget spartan II
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+recipes.remove(<LotsOfFood:porcaramel>);
+
+recipes.addShaped(<harvestcraft:porcaramel>,
+[[null,<ore:foodCaramel>,null],
+[<ore:foodCaramel>, <ore:listAllporkcooked>, <ore:foodCaramel>],
+[null, <ore:foodCaramel>, null]]);
+
+recipes.remove(<LotsOfFood:milkshakecaramel>);
+
+recipes.addShaped(<harvestcraft:milkshakecaramel>,
+[[<ore.foodCaramel>, <ore.foodCaramel>, <ore.foodCaramel>],
+[<ore.foodCaramel>, <ore:listAllmilk>, <ore.foodCaramel>],
+[<ore.foodCaramel>, <ore:bottleEmpty>, <ore.foodCaramel>]]);
+
+recipes.remove(<LotsOfFood:glacecaramel>);
+
+recipes.addShaped(<harvestcraft:glacecaramel>,
+[[null, <minecraft:snowball>, null],
+[<minecraft:snowball>, <ore.foodCaramel>, <minecraft.snowball>],
+[null, <ore:bottleEmpty>, null]]);
