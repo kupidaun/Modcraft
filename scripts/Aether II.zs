@@ -1,8 +1,5 @@
 // --- Created by Shadow185a --- 
 
-# Gregs SGCraft
-
-
 
 # Aliases
 val AetherLogs = <aether:aetherLog>;
@@ -48,5 +45,5 @@ recipes.addShaped(<aether:skyrootShovel>, [[null, <aether:skyrootPlank>], [<ore:
 recipes.addShaped(<aether:skyrootPickaxe>, [[<aether:skyrootPlank>, <aether:skyrootPlank>, <aether:skyrootPlank>], [<ore:craftingToolSoftHammer>, <aether:skyrootStick>, null], [null, <aether:skyrootStick>, null]]);
 
 # OreDict Tweaks
-//AetherLogs.add(<ore:logWood>); //Notworking?
-//AetherLogs2.add(<ore:logWood>);
+AetherLogs.add(<ore:logWood>);
+AetherLogs2.add(<ore:logWood>);
