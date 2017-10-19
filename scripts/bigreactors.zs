@@ -110,4 +110,5 @@ recipes.addShaped(itemTurbineRotorBearing, [
 	[itemTurbineHousing, itemTurbineRotorShaft, itemTurbineHousing]]);
 
 # Reactor Power Tap
+recipes.remove(reactorPowerTap);
 reactorPowerTap.addTooltip(format.red(format.bold("This item is DISABLED!")));

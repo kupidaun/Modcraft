@@ -1,6 +1,8 @@
 // --- Created by Shadow185a --- 
 
 
+
+
 # Aliases
 val AetherLogs = <aether:aetherLog>;
 val AetherLogs2 = <aether:aetherLog:2>;
@@ -26,6 +28,46 @@ recipes.remove(<aether:gravititePickaxe>);
 recipes.remove(<aether:gravititeAxe>);
 recipes.remove(<aether:gravititeSword>);
 
+#Aether II OreDict Fix
+
+<ore:stoneSmooth>.add(<aether:holystone:1>);
+<ore:stone>.add(<aether:holystone:1>);
+
+<ore:stoneCobble>.add(<aether:holystone:3>);
+<ore:cobblestone>.add(<aether:holystone:3>);
+<ore:stoneMossy>.add(<aether:holystone:3>);
+
+<ore:sand>.add(<aether:quicksoil>);
+
+<ore:plankWood>.add(<aether:skyrootPlank>);
+<ore:<ore:plankWood>.remove(<aether:skyrootPlank>);  // I know this seems like a mistake, but it isn't. For some reason it's registered as this....
+<ore:logWood>.add(<aether:aetherLog>);
+<ore:logWood>.add(<aether:aetherLog:2>);
+<ore:stickWood>.add(<aether:skyrootStick>);
+<ore::slabWood>.add(<aether:tile.skyrootSingleSlab>);
+
+<ore:treeSapling>.add(<aether:greenSkyrootSapling>);
+<ore:treeSapling>.add(<aether:goldenOakSapling>);
+<ore:treeSapling>.add(<aether:purpleCrystalSapling>);
+<ore:treeSapling>.add(<aether:orangeTree>);
+<ore:treeSapling>.add(<aether:darkBlueSkyrootSapling>);
+<ore:treeSapling>.add(<aether:blueSkyrootSapling>);
+
+<ore:treeLeaves>.add(<aether:greenSkyrootLeaves:*>);
+<ore:treeLeaves>.add(<aether:goldenOakLeaves:*>);
+<ore:treeLeaves>.add(<aether:darkBlueSkyrootLeaves:*>);
+<ore:treeLeaves>.add(<aether:blueSkyrootLeaves:*>);
+<ore:treeLeaves>.add(<aether:purpleFruitLeaves:*>);
+<ore:treeLeaves>.add(<aether:purpleCrystalLeaves:*>);
+
+<ore:blockGlass>.add(<aether:quicksoilGlass>);
+<ore:paneGlass>.add(<aether:quicksoilGlassPane>);
+
+<ore:craftingChest>.add(<aether:skyrootChest>);
+<ore:craftingWorkBench>.add(<aether:skyrootCraftingTable>);
+<ore:craftingTableWood>.add(<aether:skyrootCraftingTable>);
+<ore:craftingFurnace>.add(<aether:holystoneFurnace:3>);
+
 # Recipe Tweaks
 recipes.addShaped(<aether:gravititeShovel>, [[<ore:craftingToolFile>, <aether:enchantedGravitite>, <ore:craftingToolHardHammer>], [null, <aether:skyrootStick>, null], [null, <aether:skyrootStick>, null]]);
 recipes.addShaped(<aether:zaniteShovel>, [[<ore:craftingToolFile>, <aether:zaniteGemstone>, <ore:craftingToolHardHammer>], [null, <aether:skyrootStick>, null], [null, <aether:skyrootStick>, null]]);
@@ -45,5 +87,5 @@ recipes.addShaped(<aether:skyrootShovel>, [[null, <aether:skyrootPlank>], [<ore:
 recipes.addShaped(<aether:skyrootPickaxe>, [[<aether:skyrootPlank>, <aether:skyrootPlank>, <aether:skyrootPlank>], [<ore:craftingToolSoftHammer>, <aether:skyrootStick>, null], [null, <aether:skyrootStick>, null]]);
 
 # OreDict Tweaks
-AetherLogs.add(<ore:logWood>);
-AetherLogs2.add(<ore:logWood>);
+//AetherLogs.add(<ore:logWood>); 
+//AetherLogs2.add(<ore:logWood>);

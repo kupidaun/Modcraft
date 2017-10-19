@@ -5,6 +5,7 @@ import mods.nei.NEI;
 import mods.gregtech.Mixer;
 import mods.gregtech.Assembler;
 import mods.gregtech.ChemicalReactor;
+import mods.railcraft.Rolling;
 
 # Aliases
 var RCLeadPlate = <Railcraft:part.plate:4>;
@@ -109,10 +110,12 @@ var woodenTrackMatch = <Railcraft:track:736>.onlyWithTag({track: "railcraft:trac
 var woodenTrackResult = <Railcraft:track:736>.withTag({track: "railcraft:track.slow"});
 var woodenWyeMatch = <Railcraft:track>.onlyWithTag({track: "railcraft:track.slow.wye"});
 var woodenWyeResult = <Railcraft:track>.withTag({track: "railcraft:track.slow.wye"});
+var rollingmachine  = <Railcraft:machine.alpha:8>;
 
 
 # Block/item Removal
-
+recipes.remove(rollingmachine);
+rollingmachine.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(steamoven);
 steamoven.addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(cartBatbox);
@@ -132,6 +135,7 @@ recipes.remove(railElectric);
 recipes.remove(rebar);
 // Remove all Rock Crusher recipes
 mods.railcraft.RockCrusher.removeRecipe(<*>);
+Rolling.removeRecipe(<*>);
 
 Assembler.addRecipe(shuntingWire, leadCable, <gregtech:gt.metaitem.01:11035>, null, 25, 15);
 Assembler.addRecipe(metalPost * 16, ingotIron * 7, <gregtech:gt.integrated_circuit:7> * 0, null, 200, 15);
@@ -288,7 +292,8 @@ Mixer.addRecipe(wetCokeBrick, null, [dustClay * 4, sand * 5], water * 100, 20, 1
 
 recipes.remove(cokeOven);
 furnace.addRecipe(cokeOven, wetCokeBrick);
-
+recipes.remove(<Railcraft:machine.alpha:12> * 4);
+(<Railcraft:machine.alpha:12>).addTooltip(format.red(format.bold("This item is DISABLED!")));
 recipes.remove(<Railcraft:stair>);
 recipes.remove(<Railcraft:wall.alpha:1>);
 recipes.remove(<Railcraft:slab>);
