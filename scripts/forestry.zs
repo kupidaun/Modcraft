@@ -1,6 +1,6 @@
 // --- Created by Jason McRay ---
-// --- Few scripts created by DreamMasterXXL ---
-// --- InfiTech2 script for Forestry ---
+// --- Modified by Shadow185a ---
+// --- Forestry and binne's mods---
 
 import mods.gregtech.Assembler;
 import mods.gregtech.Mixer;
@@ -154,6 +154,27 @@ generatorBio.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 recipes.remove(scoopFT);
 scoopFT.addTooltip(format.red(format.bold("This item is DISABLED!")));
+
+# Extra Trees Block removal
+recipes.remove(<ExtraTrees:machine>);
+recipes.remove(<ExtraTrees:machine:1>);
+recipes.remove(<ExtraTrees:machine:2>);
+recipes.remove(<ExtraTrees:machine:3>);
+recipes.remove(<ExtraTrees:machine:4>);
+recipes.remove(<ExtraTrees:misc:3>);
+recipes.remove(<ExtraTrees:misc:5>);
+(<ExtraTrees:machine:*>).addTooltip(format.red(format.bold("This item is DISABLED!")));
+(<ExtraTrees:misc:5>).addTooltip(format.red(format.bold("This item is DISABLED!")));
+(<ExtraTrees:misc:3>).addTooltip(format.red(format.bold("This item is DISABLED!")));
+
+
+
+
+
+
+
+
+
 
 # Recipe Tweaks
 

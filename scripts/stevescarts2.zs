@@ -247,7 +247,7 @@ recipes.addShaped(minecart, [
     [null, Wrench, null],
     [plateSteel, HHammer, plateSteel],
     [gtwheelssteel, plateSteel, gtwheelssteel]]);
-    
+
 # Recipe Tweaks
 
 recipes.remove(entityAnalyzer);
@@ -530,7 +530,7 @@ recipes.addShaped(cartassembler, [
     [plateSteel, plateSteel, plateSteel],
     [plateSteel, machinecasingLV, plateSteel],
     [simplepcb, robotarmlv, simplepcb]]);
-    
+
 recipes.remove(ironblade);
 recipes.addShaped(ironblade * 4, [
     [null, file, null],
@@ -542,7 +542,6 @@ Assembler.addRecipe(upgradecreative, upgradenewera * 4, HVassembler, strongSwift
 recipes.remove(galgadoreye);
 ChemicalReactor.addRecipe(galgadoreye, null, eyeEnder, ghastTear * 2, fieryBlood * 200, 200);
 
-furnace.remove(galgadorianmetal);
 recipes.remove(<StevesCarts:ModuleComponents:46>);
 
 //furnace.remove(galgadorianmetal2);
@@ -559,17 +558,23 @@ BlastFurnace.addRecipe([reinforcedmetal], null, [ingotSteel, refinedhardener], 8
 
 # GT Integration
 
-recipes.remove(reinforcedmetalblock); 
+recipes.remove(reinforcedmetalblock);
 recipes.remove(reinforcedmetal);
 Compressor.addRecipe(reinforcedmetalblock, reinforcedmetal * 9);
 ArcFurnace.addRecipe([reinforcedmetal * 9], reinforcedmetalblock, oxygen * 1000, [10000], 1000, 30);
 
+//furnace.remove(galgadorianmetal);
+recipes.remove(<StevesCarts:ModuleComponents:46>);
+BlastFurnace.addRecipe([galgadorianmetal2], liquidGlowstone * 144, [reinforcedmetal, galgadoreye], 3600, 120, 1920);
+recipes.addShapeless(<StevesCarts:ModuleComponents:49>, [<StevesCarts:ModuleComponents:47>, <StevesCarts:ModuleComponents:47>, <StevesCarts:ModuleComponents:47>, <StevesCarts:ModuleComponents:47>, <StevesCarts:ModuleComponents:47>, <StevesCarts:ModuleComponents:47>, <StevesCarts:ModuleComponents:47>, <StevesCarts:ModuleComponents:47>, <StevesCarts:ModuleComponents:47>]);
+recipes.addShapeless(<StevesCarts:ModuleComponents:47> * 9, [<StevesCarts:ModuleComponents:49>]);
+
 recipes.remove(galgadorianblock1);
 recipes.remove(galgadorianmetal);
-Compressor.addRecipe(galgadorianblock1, galgadorianmetal * 9); 
+Compressor.addRecipe(galgadorianblock1, galgadorianmetal * 9);
 ArcFurnace.addRecipe([galgadorianmetal * 9], galgadorianblock1, oxygen * 1500, [10000], 1500, 120);
 
 recipes.remove(galgadorianblock2);
 recipes.remove(galgadorianmetal2);
-Compressor.addRecipe(galgadorianblock2, galgadorianmetal2 * 9); 
+Compressor.addRecipe(galgadorianblock2, galgadorianmetal2 * 9);
 ArcFurnace.addRecipe([galgadorianmetal2 * 9], galgadorianblock2, oxygen * 2000, [10000], 2000, 250);

@@ -92,13 +92,13 @@ portalDark.addTooltip(format.red(format.bold("This item is DISABLED!")));
 portalLastMillenium.addTooltip(format.red(format.bold("This item is DISABLED!")));
 EminenceStone.addTooltip(format.red(format.bold("This item is DISABLED!")));
 
-# Remove Generators
-recipes.remove(<ExtraUtilities:generator:*>);
-recipes.remove(<ExtraUtilities:generator.8:*>);
-recipes.remove(<ExtraUtilities:generator.64:*>);
-(<ExtraUtilities:generator:*>).addTooltip(format.red(format.bold("This item is DISABLED!")));
-(<ExtraUtilities:generator.8:*>).addTooltip(format.red(format.bold("This item is DISABLED!")));
-(<ExtraUtilities:generator.64:*>).addTooltip(format.red(format.bold("This item is DISABLED!")));
+# Remove Generators  
+//recipes.remove(<ExtraUtilities:generator:*>);
+//recipes.remove(<ExtraUtilities:generator.8:*>);
+//recipes.remove(<ExtraUtilities:generator.64:*>);
+//(<ExtraUtilities:generator:*>).addTooltip(format.red(format.bold("This item is DISABLED!")));
+//(<ExtraUtilities:generator.8:*>).addTooltip(format.red(format.bold("This item is DISABLED!")));
+//(<ExtraUtilities:generator.64:*>).addTooltip(format.red(format.bold("This item is DISABLED!")));
 
 # ---Recipe tweaks---
 recipes.remove(magicalWood);
